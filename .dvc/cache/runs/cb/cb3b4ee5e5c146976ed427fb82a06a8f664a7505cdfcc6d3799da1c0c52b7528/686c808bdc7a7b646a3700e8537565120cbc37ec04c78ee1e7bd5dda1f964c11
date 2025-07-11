@@ -1,0 +1,20 @@
+cmd: python3 src/model_building.py
+deps:
+- path: data/processed
+  hash: md5
+  md5: 6f393d613e1ef6777f08947b3ebd8e7e.dir
+  size: 829484
+  nfiles: 2
+- path: src/model_building.py
+  hash: md5
+  md5: 17ca7834783a6b2822184e114c2d9980
+  size: 4287
+params:
+  params.yaml:
+    model_building.n_estimators: 22
+    model_building.random_state: 2
+outs:
+- path: models/model.pkl
+  hash: md5
+  md5: d63683b3963c1bb7986a8be22752acf9
+  size: 720181
